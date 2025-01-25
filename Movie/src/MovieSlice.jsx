@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+//Başlangıç state'ini oluşturduk
 const initialState = {
     movies: []
 };
@@ -18,3 +19,6 @@ const movieSlice = createSlice({
         },
     },
 });
+
+export const { addMovie, removeMovie } = movieSlice.actions;
+export default movieSlice.reducer;
