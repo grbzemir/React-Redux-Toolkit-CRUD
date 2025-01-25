@@ -1,13 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit';    // Store oluşturmak için kullanmak zorundayız
-import movieReducer from './MovieSlice';              // Reducer'ı import ettik
-
-//store state'in tutulduğu yerdir.
-//store içerisinde bir çok reducer bulunabilir. 
-//reducerlar state'i değiştiren fonksiyonlardır.
-
+import { configureStore } from '@reduxjs/toolkit';
+import movieReducer from './MovieSlice';
 
 export const store = configureStore({
     reducer: {
-        computer: movieReducer, // Reducer'ı store'a ekledik
+        movies: movieReducer,
     },
 });
+export default store;
