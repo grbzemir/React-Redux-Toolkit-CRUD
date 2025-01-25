@@ -2,7 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 //Başlangıç state'ini oluşturduk
 const initialState = {
-    movies: []
+    movies: [{ id: "1", name: "Harry Potter" },
+    { id: "2", name: "The Lord of the Rings" },
+    { id: "3", name: "The Matrix" },
+    ],
 };
 
 const movieSlice = createSlice({

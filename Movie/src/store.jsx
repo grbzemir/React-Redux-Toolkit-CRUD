@@ -7,5 +7,7 @@ import movieReducer from './MovieSlice';              // Reducer'ı import ettik
 
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        computer: movieReducer, // Reducer'ı store'a ekledik
+    },
 });
